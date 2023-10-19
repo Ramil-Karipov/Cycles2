@@ -38,13 +38,23 @@ public class Main {
         System.out.println("Задача 6");
         int salary4 = 15000;
         int total4 = salary4 * (7/100);
-        for (int s = 1; total4 < 12_000_000; s++) {
+        for (int e = 1; total4 < 12_000_000; e++) {
             total4 = total4 + salary4;
-            if (s%6 == 0)
-                System.out.println("Месяц " + s + ", сумма накоплений равна " + total4 + " рублей");}
+            if (e % 6 == 0)
+                if (e <= 108)
+                    System.out.println("Месяц " + e + ", сумма накоплений равна " + total4 + " рублей");
+        }
+        System.out.println("Задача 7");
+        for (int day = 5; day <= 31; day = day + 7) {
+            System.out.println("Сегодня пятница, " + day + "-е число. Необходимо подготовить отчет");
+        }
+        System.out.println("Задача 8");
+        for (int j = 0; j < 2123; j = j + 79) {
+            if (j % 79 == 0)
+                if (j > 1823)
+                    System.out.println(j);
 
-
-
+        }
 
     }
 }
